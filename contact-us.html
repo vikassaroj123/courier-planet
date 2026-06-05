@@ -19,14 +19,18 @@
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Courier Planet">
+    <meta property="og:locale" content="en_IN">
     <meta property="og:title" content="Contact Courier Planet | Courier & Cargo in Sector 94, Noida">
     <meta property="og:description" content="Contact Courier Planet, Khasra No 40, Near Gosala, Sector 94, Gautam Buddha Nagar, UP 201313. Call/WhatsApp +91 88515 43447 or email info@courierplanet.in for courier & cargo bookings.">
     <meta property="og:url" content="https://courierplanet.in/contact-us.html">
-    <meta property="og:image" content="https://courierplanet.in/assets/img/logo/logo-black.png">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://courierplanet.in/assets/img/background/banner-1.jpg">
+    <meta property="og:image:width" content="1400">
+    <meta property="og:image:height" content="842">
+    <meta property="og:image:alt" content="Contact Courier Planet — Sector 94, Noida">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Contact Courier Planet | Courier & Cargo in Sector 94, Noida">
     <meta name="twitter:description" content="Contact Courier Planet, Khasra No 40, Near Gosala, Sector 94, Gautam Buddha Nagar, UP 201313. Call/WhatsApp +91 88515 43447 or email info@courierplanet.in for courier & cargo bookings.">
-    <meta name="twitter:image" content="https://courierplanet.in/assets/img/logo/logo-black.png">
+    <meta name="twitter:image" content="https://courierplanet.in/assets/img/background/banner-1.jpg">
 
     <!-- Favicon (logo icon) -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
@@ -38,10 +42,11 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "@id": "https://courierplanet.in/",
+      "@type": ["LocalBusiness", "CourierService"],
+      "@id": "https://courierplanet.in/#business",
       "name": "Courier Planet",
       "image": "https://courierplanet.in/assets/img/logo/logo-black.png",
+      "logo": "https://courierplanet.in/assets/img/logo/logo-black.png",
       "url": "https://courierplanet.in/",
       "telephone": "+91-88515-43447",
       "email": "info@courierplanet.in",
@@ -56,8 +61,53 @@
         "postalCode": "201313",
         "addressCountry": "IN"
       },
-      "areaServed": "IN",
-      "openingHours": "Mo-Sa 09:00-20:00"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "28.5469",
+        "longitude": "77.3151"
+      },
+      "hasMap": "https://www.google.com/maps?q=Courier+Planet+Sector+94+Noida",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-88515-43447",
+        "email": "info@courierplanet.in",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": ["en", "hi"]
+      },
+      "areaServed": ["Noida", "Greater Noida", "Gautam Buddha Nagar", "India"],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "20:00"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Contact page structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "url": "https://courierplanet.in/contact-us.html",
+      "name": "Contact Courier Planet",
+      "description": "Contact Courier Planet in Sector 94, Gautam Buddha Nagar, Noida. Call or WhatsApp +91 88515 43447 or email info@courierplanet.in.",
+      "mainEntity": { "@id": "https://courierplanet.in/#business" }
+    }
+    </script>
+
+    <!-- Breadcrumb structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://courierplanet.in/" },
+        { "@type": "ListItem", "position": 2, "name": "Contact Us", "item": "https://courierplanet.in/contact-us.html" }
+      ]
     }
     </script>
 

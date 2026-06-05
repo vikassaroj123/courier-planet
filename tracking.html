@@ -19,14 +19,18 @@
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Courier Planet">
+    <meta property="og:locale" content="en_IN">
     <meta property="og:title" content="Track Your Shipment | Courier Planet Noida">
     <meta property="og:description" content="Track your courier or cargo shipment with Courier Planet, Noida. Real-time tracking for DTDC, FedEx & DHL parcels across India and worldwide. Call +91 88515 43447.">
     <meta property="og:url" content="https://courierplanet.in/tracking.html">
-    <meta property="og:image" content="https://courierplanet.in/assets/img/logo/logo-black.png">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://courierplanet.in/assets/img/background/banner-1.jpg">
+    <meta property="og:image:width" content="1400">
+    <meta property="og:image:height" content="842">
+    <meta property="og:image:alt" content="Track your shipment with Courier Planet, Noida">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Track Your Shipment | Courier Planet Noida">
     <meta name="twitter:description" content="Track your courier or cargo shipment with Courier Planet, Noida. Real-time tracking for DTDC, FedEx & DHL parcels across India and worldwide. Call +91 88515 43447.">
-    <meta name="twitter:image" content="https://courierplanet.in/assets/img/logo/logo-black.png">
+    <meta name="twitter:image" content="https://courierplanet.in/assets/img/background/banner-1.jpg">
 
     <!-- Favicon (logo icon) -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
@@ -38,10 +42,11 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "@id": "https://courierplanet.in/",
+      "@type": ["LocalBusiness", "CourierService"],
+      "@id": "https://courierplanet.in/#business",
       "name": "Courier Planet",
       "image": "https://courierplanet.in/assets/img/logo/logo-black.png",
+      "logo": "https://courierplanet.in/assets/img/logo/logo-black.png",
       "url": "https://courierplanet.in/",
       "telephone": "+91-88515-43447",
       "email": "info@courierplanet.in",
@@ -56,8 +61,45 @@
         "postalCode": "201313",
         "addressCountry": "IN"
       },
-      "areaServed": "IN",
-      "openingHours": "Mo-Sa 09:00-20:00"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "28.5469",
+        "longitude": "77.3151"
+      },
+      "areaServed": ["Noida", "Greater Noida", "Gautam Buddha Nagar", "India"],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "20:00"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Tracking page structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://courierplanet.in/tracking.html",
+      "name": "Track Your Shipment",
+      "description": "Track your DTDC, FedEx and DHL courier or cargo shipment in real time with Courier Planet, Noida.",
+      "isPartOf": { "@id": "https://courierplanet.in/#website" },
+      "about": { "@id": "https://courierplanet.in/#business" }
+    }
+    </script>
+
+    <!-- Breadcrumb structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://courierplanet.in/" },
+        { "@type": "ListItem", "position": 2, "name": "Track Shipment", "item": "https://courierplanet.in/tracking.html" }
+      ]
     }
     </script>
 
@@ -190,7 +232,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-7 pad-30 wow fadeInLeft" data-wow-offset="50" data-wow-delay=".30s">
-                            <img alt="" src="assets/img/block/delivery.png" />
+                            <img alt="Track DTDC, FedEx and DHL courier and cargo shipments with Courier Planet" src="assets/img/block/delivery.png" loading="lazy" />
                         </div>
                         <div class="col-md-5 pad-30 wow fadeInRight" data-wow-offset="50" data-wow-delay=".30s">
                             <div class="prod-info white-clr">

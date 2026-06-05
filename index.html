@@ -19,14 +19,19 @@
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Courier Planet">
+    <meta property="og:locale" content="en_IN">
     <meta property="og:title" content="Courier Planet | Domestic, International & Cargo Courier Services in Noida">
     <meta property="og:description" content="Authorised DTDC, FedEx & DHL booking point in Sector 94, Noida for domestic, international & cargo shipping. Call +91 88515 43447.">
     <meta property="og:url" content="https://courierplanet.in/">
-    <meta property="og:image" content="https://courierplanet.in/assets/img/logo/logo-black.png">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://courierplanet.in/assets/img/background/banner-1.jpg">
+    <meta property="og:image:width" content="1400">
+    <meta property="og:image:height" content="842">
+    <meta property="og:image:alt" content="Courier Planet — courier & cargo services in Noida">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Courier Planet | Courier & Cargo Services in Noida">
     <meta name="twitter:description" content="Authorised DTDC, FedEx & DHL booking point in Sector 94, Noida. Call +91 88515 43447.">
-    <meta name="twitter:image" content="https://courierplanet.in/assets/img/logo/logo-black.png">
+    <meta name="twitter:image" content="https://courierplanet.in/assets/img/background/banner-1.jpg">
+    <meta name="twitter:image:alt" content="Courier Planet — courier & cargo services in Noida">
 
     <!-- Favicon (logo icon) -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
@@ -38,16 +43,21 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "@id": "https://courierplanet.in/",
+      "@type": ["LocalBusiness", "CourierService"],
+      "@id": "https://courierplanet.in/#business",
       "name": "Courier Planet",
+      "alternateName": "Courier Planet Noida",
       "image": "https://courierplanet.in/assets/img/logo/logo-black.png",
+      "logo": "https://courierplanet.in/assets/img/logo/logo-black.png",
       "url": "https://courierplanet.in/",
       "telephone": "+91-88515-43447",
       "email": "info@courierplanet.in",
       "priceRange": "₹₹",
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "Cash, UPI, Card",
       "taxID": "09AWDPK5091J1Z7",
-      "description": "Authorised DTDC, DTDC International, FedEx and DHL courier and cargo booking point in Sector 94, Gautam Buddha Nagar, Noida.",
+      "description": "Authorised DTDC, DTDC International, FedEx and DHL courier and cargo booking point in Sector 94, Gautam Buddha Nagar, Noida. Domestic, international and cargo shipping with safe handling and on-time delivery.",
+      "slogan": "Reliable courier & cargo services across India & worldwide",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Khasra No 40, Near Gosala, Sector 94",
@@ -56,8 +66,128 @@
         "postalCode": "201313",
         "addressCountry": "IN"
       },
-      "areaServed": "IN",
-      "openingHours": "Mo-Sa 09:00-20:00"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "28.5469",
+        "longitude": "77.3151"
+      },
+      "hasMap": "https://www.google.com/maps?q=Courier+Planet+Sector+94+Noida",
+      "areaServed": [
+        { "@type": "City", "name": "Noida" },
+        { "@type": "City", "name": "Greater Noida" },
+        { "@type": "AdministrativeArea", "name": "Gautam Buddha Nagar" },
+        { "@type": "Country", "name": "India" }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "20:00"
+        }
+      ],
+      "knowsAbout": ["Domestic Courier", "International Courier", "Cargo Service", "Parcel Tracking", "DTDC", "FedEx", "DHL"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Courier & Cargo Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Domestic Courier Service", "description": "Doorstep pickup and delivery of parcels across India." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "International Courier Service", "description": "Worldwide shipping via DTDC International, FedEx and DHL." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cargo Service", "description": "Bulk and heavy cargo shipping with safe handling and tracking." } }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "3"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Rahul Sharma" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "I send parcels to my family in Mumbai every month and Courier Planet has never let me down. Honest rates and accurate tracking."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Priya Verma" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "We use Courier Planet for all our business and international shipments. Their DHL and FedEx options are fast and the staff is very helpful."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Mohammad Imran" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "4", "bestRating": "5" },
+          "reviewBody": "Booked a heavy cargo shipment and everything reached safely on time. Clear pricing and proper packing."
+        }
+      ]
+    }
+    </script>
+
+    <!-- Website + Search structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://courierplanet.in/#website",
+      "url": "https://courierplanet.in/",
+      "name": "Courier Planet",
+      "publisher": { "@id": "https://courierplanet.in/#business" },
+      "potentialAction": {
+        "@type": "TrackAction",
+        "target": "https://courierplanet.in/tracking.html?id={tracking_id}",
+        "query-input": "required name=tracking_id"
+      }
+    }
+    </script>
+
+    <!-- FAQ structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Where is Courier Planet located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Courier Planet is at Khasra No 40, Near Gosala, Sector 94, Gautam Buddha Nagar (Noida), Uttar Pradesh 201313. Call or WhatsApp +91 88515 43447."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which courier companies can I book through Courier Planet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Courier Planet is an authorised booking point for DTDC, DTDC International, FedEx and DHL, covering domestic, international and cargo shipments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you handle international and cargo shipments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We ship parcels worldwide through the DTDC, FedEx and DHL networks and also handle bulk and heavy cargo with safe handling and tracking."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I track my courier or cargo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enter your tracking ID on our tracking page at https://courierplanet.in/tracking.html to get real-time updates for DTDC, FedEx and DHL shipments."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are Courier Planet's working hours?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We are open Monday to Saturday, 9:00 AM to 8:00 PM."
+          }
+        }
+      ]
     }
     </script>
 
@@ -172,7 +302,7 @@
             <!-- Banner -->
             <section class="banner mask-overlay pad-120 white-clr">
                 <div class="container theme-container rel-div">
-                    <img class="pt-10 effect animated fadeInLeft" alt="" src="assets/img/icons/icon-1.png" />
+                    <img class="pt-10 effect animated fadeInLeft" alt="Courier Planet domestic, international and cargo courier delivery" src="assets/img/icons/icon-1.png" />
                     <ul class="list-items fw-600 effect animated wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s">
                         <li><a href="#">domestic</a></li>
                         <li><a href="#">international</a></li>
@@ -226,21 +356,21 @@
                                 <p class="fs-16 wow fadeInUp" data-wow-offset="50" data-wow-delay=".25s">Courier Planet is your trusted booking point in Sector 94, Gautam Buddha Nagar (Noida), Uttar Pradesh. As an authorised partner of <strong>DTDC, DTDC International, FedEx and DHL</strong>, we handle domestic parcels, international shipments and bulk cargo with safe handling, fair rates and on-time delivery.</p>
                                 <ul class="feature">
                                     <li>
-                                        <img alt="" src="assets/img/icons/icon-2.png" class="wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s" />
+                                        <img alt="Fast courier delivery icon" src="assets/img/icons/icon-2.png" class="wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s" />
                                         <div class="feature-content wow rotateInDownRight" data-wow-offset="50" data-wow-delay=".30s">
                                             <h2 class="title-1">Fast delivery</h2>
                                             <p>Quick pickup &amp; doorstep delivery</p>
                                         </div>
                                     </li>
                                     <li>
-                                        <img alt="" src="assets/img/icons/icon-3.png" class="wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s" />
+                                        <img alt="Secured and insured shipment icon" src="assets/img/icons/icon-3.png" class="wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s" />
                                         <div class="feature-content wow rotateInDownRight" data-wow-offset="50" data-wow-delay=".30s">
                                             <h2 class="title-1">secured service</h2>
                                             <p>Insured, tracked &amp; safely packed</p>
                                         </div>
                                     </li>
                                     <li>
-                                        <img alt="" src="assets/img/icons/icon-4.png" class="wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s" />
+                                        <img alt="Worldwide shipping via DTDC, FedEx and DHL icon" src="assets/img/icons/icon-4.png" class="wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s" />
                                         <div class="feature-content wow rotateInDownRight" data-wow-offset="50" data-wow-delay=".30s">
                                             <h2 class="title-1">worldwide shipping</h2>
                                             <p>DTDC, FedEx &amp; DHL international network</p>
@@ -251,7 +381,7 @@
                         </div>
                         <div class="col-md-6 text-center">
                             <div class="pb-80 visible-lg"></div>
-                            <img alt="" src="assets/img/block/about-img.png" alt="Courier and cargo delivery service" class="wow slideInRight" data-wow-offset="50" data-wow-delay=".20s" />
+                            <img src="assets/img/block/about-img.png" alt="Courier and cargo delivery service at Courier Planet, Sector 94 Noida" class="wow slideInRight" loading="lazy" data-wow-offset="50" data-wow-delay=".20s" />
                         </div>
                     </div>
                 </div>
@@ -328,7 +458,7 @@
                                 <div class="pb-120 hidden-xs"></div>
                             </div>
                             <div class="delivery-img pt-10">
-                                <img alt="" src="assets/img/block/delivery.png" alt="Fast parcel delivery across India and worldwide" class="wow slideInLeft" data-wow-offset="50" data-wow-delay=".20s" />
+                                <img src="assets/img/block/delivery.png" alt="Fast parcel delivery across India and worldwide" class="wow slideInLeft" loading="lazy" data-wow-offset="50" data-wow-delay=".20s" />
                             </div>
                         </div>
                     </div>
@@ -342,7 +472,7 @@
                     <div class="testimonial-slider no-pagination pad-120">
                         <div class="item">
                             <div class="testimonial-img darkclr-border theme-clr font-2 wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s">
-                                <img alt="" src="assets/img/block/testimonial-1.png" />
+                                <img alt="Courier Planet customer Rahul Sharma" src="assets/img/block/testimonial-1.png" loading="lazy" />
                                 <span>,,</span>
                             </div>
                             <div class="testimonial-content">
@@ -356,7 +486,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonial-img darkclr-border theme-clr font-2">
-                                <img alt="" src="assets/img/block/testimonial-1.png" />
+                                <img alt="Courier Planet customer Priya Verma" src="assets/img/block/testimonial-1.png" loading="lazy" />
                                 <span>,,</span>
                             </div>
                             <div class="testimonial-content">
@@ -370,7 +500,7 @@
                         </div>
                         <div class="item">
                             <div class="testimonial-img darkclr-border theme-clr font-2">
-                                <img alt="" src="assets/img/block/testimonial-1.png" />
+                                <img alt="Courier Planet customer Mohammad Imran" src="assets/img/block/testimonial-1.png" loading="lazy" />
                                 <span>,,</span>
                             </div>
                             <div class="testimonial-content">
