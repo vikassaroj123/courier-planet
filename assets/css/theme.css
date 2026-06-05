@@ -3486,3 +3486,80 @@ a:hover,
     top: 0;
     padding: 10px 0;
 }
+
+/* ============================================================
+   Responsive fixes — stop horizontal overflow & section overlaps
+   (keeps text and images inside the screen on tablets & phones)
+   ============================================================ */
+
+/* Never allow the page to scroll sideways or push content off-screen */
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* Make every image fluid so logos / banners / blocks never overflow */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet and below: take the delivery image out of absolute
+   positioning so it sits below the text instead of behind it */
+@media (max-width: 991px) {
+    .delivery-img {
+        position: static;
+        right: auto;
+        left: auto;
+        top: auto;
+        bottom: auto;
+        margin: 30px auto 0;
+        text-align: center;
+    }
+    .prod-delivery::before {
+        display: none;
+    }
+    .prod-delivery .pt-120 {
+        padding-top: 0;
+    }
+    .prod-delivery .pb-120,
+    .prod-delivery .pb-50 {
+        padding-bottom: 0;
+    }
+}
+
+/* Phones */
+@media (max-width: 767px) {
+    /* Restore side gutters so Bootstrap's negative row margins
+       don't push content past the edge of the screen */
+    .theme-container,
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Let long marketing lines wrap naturally instead of being cut off */
+    .banner .section-title br,
+    .prod-delivery p br,
+    .testimonial-content p br,
+    .steps-wrap p br {
+        display: none;
+    }
+
+    /* Guard against any long word overflowing its box */
+    .section-title,
+    h1, h2, h3,
+    p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Banner service words: keep them tidy and centred */
+    .banner .list-items {
+        padding: 0 10px;
+    }
+    .banner .list-items > li {
+        display: inline-block;
+    }
+}
