@@ -3373,6 +3373,64 @@ a:hover,
     height: auto;
 }
 
+/* Floating WhatsApp button with an outward pulse animation */
+.whatsapp-float {
+    position: fixed;
+    left: 22px;
+    bottom: 24px;
+    width: 56px;
+    height: 56px;
+    background: #25d366;
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 58px;
+    z-index: 1100;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    animation: wa-pulse 2s infinite;
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.whatsapp-float:hover,
+.whatsapp-float:focus {
+    color: #ffffff;
+    background: #1ebe5b;
+    transform: scale(1.08);
+}
+
+@keyframes wa-pulse {
+    0% {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25), 0 0 0 0 rgba(37, 211, 102, 0.6);
+    }
+    70% {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25), 0 0 0 20px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25), 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+@media (max-width: 767px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+        line-height: 52px;
+        left: 16px;
+        bottom: 16px;
+    }
+}
+
+/* Contact page: line the details block up with the top of the form */
+.contact-page .contact-detail {
+    margin-top: 0;
+}
+
+.contact-page .contact-detail > li:first-child {
+    padding-top: 0;
+}
+
 /* "Why choose us" checklist (replaces the cost-calculator form) */
 .why-list {
     list-style: none;
